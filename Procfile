@@ -1,1 +1,1 @@
-web: go run cmd/main.go
+web: go-getting-started
