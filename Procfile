@@ -1,1 +1,1 @@
-web: bin/rekomendasi_toko_BE
+web:bin/rekomendasi_toko_BE
