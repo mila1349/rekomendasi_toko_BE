@@ -1,1 +1,1 @@
-web: gunicorn app:app
+web: cmd/main.go
