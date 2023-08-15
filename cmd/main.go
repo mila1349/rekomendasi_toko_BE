@@ -21,7 +21,7 @@ func main() {
 
 	//router list
 	router.HandleFunc("/rekomendasi", controllers.GetRekomendasi).Methods(http.MethodPost)
-	router.HandleFunc("/channel", controllers.Channels).Methods(http.MethodGet)
+	router.HandleFunc("/", controllers.Channels).Methods(http.MethodGet)
 
 	log.Println("Api is in 4000")
 	// controllers.Kelompokin()
