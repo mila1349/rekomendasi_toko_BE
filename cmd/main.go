@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"net/http"
+	"os"
 
 	"server/pkg/controllers"
 
@@ -25,5 +26,5 @@ func main() {
 	log.Println("Api is in 4000")
 	// controllers.Kelompokin()
 
-	http.ListenAndServe(":4000", handlers.CORS(headers, methods, origins)(router))
+	http.ListenAndServe(os.Getenv("port"), handlers.CORS(headers, methods, origins)(router))
 }
